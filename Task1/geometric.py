@@ -25,6 +25,7 @@ def approxEntropy(N,p) :
             approxEntropy(25,0.5) = 1.9999991953372955
             approxEntropy(50,0.5) = 1.9999999999999538
             ...
-            So if N -> ∞ then approxEntropy(N, 0.5) -> 2 ~ Entropy of geometric info. source with p = 0.5
+            So if N -> ∞ then 
+            approxEntropy(N, 0.5) -> 2 ~ Entropy of geometric infomation source with p = 0.5
     '''
     return sum(prob(isr, p) * infoMeasure(isr, p) for isr in range(1,N+1))
